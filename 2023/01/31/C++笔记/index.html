@@ -4,17 +4,25 @@
   <meta charset="utf-8">
   
   
-  <title>蔡胖子</title>
+  <title>C++笔记 | 蔡胖子</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="我每天都好困">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蔡胖子">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="[TOC] 面向对象面向对象的三大特性：封装、继承、多态 封装：将零散的数据和算法放在一个集合里，方便管理和使用 复用性：公共功能、过程的抽象，体现为能被重复使用的类、方法，就要要求我们针对某一类功能而不是针对某一个功能去设计 扩展性：增加新的功能不影响原来已经封装好的功能 vs项目.sln文件对应的是解决方案，其它的文件是打开过程中产生的临时文件，是可以删掉的 Debug里是生成的可执行程序，调">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++笔记">
+<meta property="og:url" content="http://example.com/2023/01/31/C++%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="蔡胖子">
-<meta property="og:description" content="我每天都好困">
+<meta property="og:description" content="[TOC] 面向对象面向对象的三大特性：封装、继承、多态 封装：将零散的数据和算法放在一个集合里，方便管理和使用 复用性：公共功能、过程的抽象，体现为能被重复使用的类、方法，就要要求我们针对某一类功能而不是针对某一个功能去设计 扩展性：增加新的功能不影响原来已经封装好的功能 vs项目.sln文件对应的是解决方案，其它的文件是打开过程中产生的临时文件，是可以删掉的 Debug里是生成的可执行程序，调">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670387586358.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670512441877.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670832832306.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670832877588.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670832935365.png">
+<meta property="article:published_time" content="2023-01-31T02:47:53.000Z">
+<meta property="article:modified_time" content="2023-01-31T03:43:53.784Z">
 <meta property="article:author" content="蔡胖子">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670387586358.png">
   
     <link rel="alternate" href="/atom.xml" title="蔡胖子" type="application/atom+xml">
   
@@ -71,59 +79,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/01/31/hexo%E4%BD%BF%E7%94%A8/" class="article-date">
-  <time class="dt-published" datetime="2023-01-31T03:23:53.000Z" itemprop="datePublished">2023-01-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/01/31/hexo%E4%BD%BF%E7%94%A8/">hexo使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="HEXO使用"><a href="#HEXO使用" class="headerlink" title="HEXO使用"></a>HEXO使用</h1><h2 id="1-博客文件夹的位置"><a href="#1-博客文件夹的位置" class="headerlink" title="1.博客文件夹的位置"></a>1.博客文件夹的位置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">博客位置：</span><br><span class="line">E:/blog</span><br><span class="line">源文件位置：</span><br><span class="line">E:/blog/source/posts_</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-对博客进行操作"><a href="#2-对博客进行操作" class="headerlink" title="2.对博客进行操作"></a>2.对博客进行操作</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">新建博客：</span><br><span class="line">1.</span><br><span class="line">在E:/blog下打开 git bash 输入代码</span><br><span class="line">hexo new &quot;标题&quot;</span><br><span class="line">后用vi打开编辑</span><br><span class="line">如：</span><br><span class="line">hexo new &quot;我是蔡胖子略略略&quot;</span><br><span class="line">该方式新建博客会自动添加标题和时间的配置文段</span><br><span class="line">2.</span><br><span class="line">直接在E:/blog/source/posts_下新建.md文件编写</span><br><span class="line">但该方式新建博客不会自动添加配置文段，需要自己手动添加</span><br><span class="line">方法为：</span><br><span class="line">在最上面右键空白处点击-&gt;插入-&gt;YAML Front Matter</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-博客的更新-部署"><a href="#3-博客的更新-部署" class="headerlink" title="3.博客的更新(部署)"></a>3.博客的更新(部署)</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">三连代码：</span><br><span class="line">在E:/blog下打开 git bash 输入代码</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">分别是清除、生成、部署，每次更新博客直接按顺序运行上三行代码</span><br><span class="line">注：当开启steam++加速器加速时会占用网络，上传会失败，需要关闭加速器再上传</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-博客的运行"><a href="#4-博客的运行" class="headerlink" title="4.博客的运行"></a>4.博客的运行</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">博客更新后要很久才能看到博客更新的状态，为了快速看到更新效果可以运行博客</span><br><span class="line">在E:/blog下打开 git bash 输入代码</span><br><span class="line">hexo s</span><br><span class="line">运行该代码后会给你一个网址，运行结果如下：</span><br><span class="line">LENOVO@LAPTOP-OFBGASM2 MINGW64 /e/blog</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo s</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br><span class="line">其中http://localhost:4000/就是系统为你分配的临时网址地址，端口为4000，可以看到博客执行后的效果。</span><br><span class="line">注：复制该网址时需右键复制，不能按 Ctrl+C ，因为unix中 Ctrl+C 为终止进程的信号！！！</span><br><span class="line">注：查看完执行结果后切记按一下 Ctrl+C 结束运行，否则会一直占用4000端口</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-4000端口被占用"><a href="#5-4000端口被占用" class="headerlink" title="5.4000端口被占用"></a>5.4000端口被占用</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">所有人运行代码hexo s时返回结果都是http://localhost:4000/，因此常常出现4000端口被占用的情况</span><br><span class="line">解决：更换5000端口或更大的端口</span><br><span class="line">代码：</span><br><span class="line">hexo s -p 5000 #更换5000端口执行</span><br><span class="line">若5000也被占用同理换更大的端口</span><br><span class="line"></span><br><span class="line">执行结果如下：</span><br><span class="line">LENOVO@LAPTOP-OFBGASM2 MINGW64 /e/blog</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo s -p 5000</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:5000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-配置文件-config-yml"><a href="#6-配置文件-config-yml" class="headerlink" title="6.配置文件_config.yml"></a>6.配置文件_config.yml</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">预知后事如何听，请听下回讲解~</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/31/hexo%E4%BD%BF%E7%94%A8/" data-id="cldjp458q0002x4v50njhhgzu" data-title="hexo使用" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-C++笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-C++笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/01/31/C++%E7%AC%94%E8%AE%B0/" class="article-date">
   <time class="dt-published" datetime="2023-01-31T02:47:53.000Z" itemprop="datePublished">2023-01-31</time>
@@ -136,8 +92,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/01/31/C++%E7%AC%94%E8%AE%B0/">C++笔记</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      C++笔记
     </h1>
   
 
@@ -456,100 +412,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-平淡的西瓜" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/" class="article-date">
-  <time class="dt-published" datetime="2023-01-31T02:47:53.000Z" itemprop="datePublished">2023-01-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2023/01/31/hexo%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/">平淡的西瓜</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
+          hexo使用
         
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/" data-id="cldjp458u0003x4v5g0co06ig" data-title="平淡的西瓜" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
+      </div>
+    </a>
+  
+  
+    <a href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">平淡的西瓜</div>
+    </a>
+  
+</nav>
+
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/26/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-09-26T07:31:36.822Z" itemprop="datePublished">2022-09-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/09/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/26/hello-world/" data-id="cldjp458o0001x4v5880da4ig" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
