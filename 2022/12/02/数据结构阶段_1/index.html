@@ -14,19 +14,71 @@
 <meta name="author" content="蔡胖子" />
 
 
-    
-    
 
-
-<meta name="description" content="我每天都好困">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蔡胖子">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="[TOC] 时间复杂度：为了解决问题，代码的总执行次数 运算：  1.舍弃掉计算结果中的常数项 2.多项式级别的运算，只保留最大项 3.如果当前的算法在 的资源消耗内即可完成。复杂度为O(1)  经验性结论： 1.单纯的顺序结构或选择结构，时间复杂度都是O(1) 2.一个简单的循环结构一般情况下时间复杂度是O(n) 3.一般情况下，两层 循环嵌套，时间复杂度是O(n^2) 4.采用二分的分治法，时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构笔记">
+<meta property="og:url" content="http://example.com/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/index.html">
 <meta property="og:site_name" content="蔡胖子">
-<meta property="og:description" content="我每天都好困">
+<meta property="og:description" content="[TOC] 时间复杂度：为了解决问题，代码的总执行次数 运算：  1.舍弃掉计算结果中的常数项 2.多项式级别的运算，只保留最大项 3.如果当前的算法在 的资源消耗内即可完成。复杂度为O(1)  经验性结论： 1.单纯的顺序结构或选择结构，时间复杂度都是O(1) 2.一个简单的循环结构一般情况下时间复杂度是O(n) 3.一般情况下，两层 循环嵌套，时间复杂度是O(n^2) 4.采用二分的分治法，时">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1658213184731.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1658212623728.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1658214129313.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1658815809784.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1658815907537.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1658821706891.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668600031375.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668600976682.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668601548436.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668770833339.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1671346305079.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674543867540.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1671351850651.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674559930857.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674561559858.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669030359455.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668169187719.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668165014035.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668165498658.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1668168217604.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669373013840.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669376074829.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669376074912.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669378935451.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669631235050.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669632962420.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669633762419.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669720112896.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669720990171.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1669722186568.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ebceaf5850d24e98ab98fcb443e0a775.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQnVnLlJlbW92ZSgp,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/be8b84f80a3a4decbb8f3f360828a855.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQnVnLlJlbW92ZSgp,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a106294aec474249b5868beffd82f112.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQnVnLlJlbW92ZSgp,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/bb5cf62d3bde4e40839fcdad4d692575.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQnVnLlJlbW92ZSgp,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1671264272302.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674642041271.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674632474001.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674821731882.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674820003348.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674893373496.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674893407903.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674893428956.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674906000237.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674908927263.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674907940748.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1674983264886.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1675164219988.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1675321702785.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1675337723859.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1675344373357.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1675347696332.png">
+<meta property="og:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1675214291252.png">
+<meta property="article:published_time" content="2022-12-02T14:33:55.000Z">
+<meta property="article:modified_time" content="2023-02-02T14:32:49.587Z">
 <meta property="article:author" content="蔡胖子">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1658213184731.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,13 +108,11 @@
 
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>蔡胖子</title>
+<title>数据结构笔记 | 蔡胖子</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -71,8 +121,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -274,486 +324,7 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-hexo使用" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2023/01/31/hexo%E4%BD%BF%E7%94%A8/" class="article-date">
-      <time datetime="2023-01-31T03:23:53.000Z" itemprop="datePublished">2023-01-31</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/01/31/hexo%E4%BD%BF%E7%94%A8/">hexo使用</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="HEXO使用"><a href="#HEXO使用" class="headerlink" title="HEXO使用"></a>HEXO使用</h1><h2 id="1-博客文件夹的位置"><a href="#1-博客文件夹的位置" class="headerlink" title="1.博客文件夹的位置"></a>1.博客文件夹的位置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">博客位置：</span><br><span class="line">E:/blog</span><br><span class="line">源文件位置：</span><br><span class="line">E:/blog/source/posts_</span><br><span class="line">博客地址</span><br><span class="line">https://psh193.github.io/</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-对博客进行操作"><a href="#2-对博客进行操作" class="headerlink" title="2.对博客进行操作"></a>2.对博客进行操作</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">新建博客：</span><br><span class="line">1.</span><br><span class="line">在E:/blog下打开 git bash 输入代码</span><br><span class="line">hexo new &quot;标题&quot;</span><br><span class="line">后用vi打开编辑</span><br><span class="line">如：</span><br><span class="line">hexo new &quot;我是蔡胖子略略略&quot;</span><br><span class="line">该方式新建博客会自动添加标题和时间的配置文段</span><br><span class="line">2.</span><br><span class="line">直接在E:/blog/source/posts_下新建.md文件编写</span><br><span class="line">但该方式新建博客不会自动添加配置文段，需要自己手动添加</span><br><span class="line">方法为：</span><br><span class="line">在最上面右键空白处点击-&gt;插入-&gt;YAML Front Matter</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-博客的更新-部署"><a href="#3-博客的更新-部署" class="headerlink" title="3.博客的更新(部署)"></a>3.博客的更新(部署)</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">三连代码：</span><br><span class="line">在E:/blog下打开 git bash 输入代码</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">分别是清除、生成、部署，每次更新博客直接按顺序运行上三行代码</span><br><span class="line">注：当开启steam++加速器加速时会占用网络，上传会失败，需要关闭加速器再上传</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-博客的运行"><a href="#4-博客的运行" class="headerlink" title="4.博客的运行"></a>4.博客的运行</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">博客更新后要很久才能看到博客更新的状态，为了快速看到更新效果可以运行博客</span><br><span class="line">在E:/blog下打开 git bash 输入代码</span><br><span class="line">hexo s</span><br><span class="line">运行该代码后会给你一个网址，运行结果如下：</span><br><span class="line">LENOVO@LAPTOP-OFBGASM2 MINGW64 /e/blog</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo s</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br><span class="line">其中http://localhost:4000/就是系统为你分配的临时网址地址，端口为4000，可以看到博客执行后的效果。</span><br><span class="line">注：复制该网址时需右键复制，不能按 Ctrl+C ，因为unix中 Ctrl+C 为终止进程的信号！！！</span><br><span class="line">注：查看完执行结果后切记按一下 Ctrl+C 结束运行，否则会一直占用4000端口</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-4000端口被占用"><a href="#5-4000端口被占用" class="headerlink" title="5.4000端口被占用"></a>5.4000端口被占用</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">所有人运行代码hexo s时返回结果都是http://localhost:4000/，因此常常出现4000端口被占用的情况</span><br><span class="line">解决：更换5000端口或更大的端口</span><br><span class="line">代码：</span><br><span class="line">hexo s -p 5000 #更换5000端口执行</span><br><span class="line">若5000也被占用同理换更大的端口</span><br><span class="line"></span><br><span class="line">执行结果如下：</span><br><span class="line">LENOVO@LAPTOP-OFBGASM2 MINGW64 /e/blog</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo s -p 5000</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:5000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-配置文件-config-yml"><a href="#6-配置文件-config-yml" class="headerlink" title="6.配置文件_config.yml"></a>6.配置文件_config.yml</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">预知后事如何听，请听下回讲解~</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-C++笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2023/01/31/C++%E7%AC%94%E8%AE%B0/" class="article-date">
-      <time datetime="2023-01-31T02:47:53.000Z" itemprop="datePublished">2023-01-31</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/01/31/C++%E7%AC%94%E8%AE%B0/">C++笔记</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>[TOC]</p>
-<h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4><p>面向对象的三大特性：封装、继承、多态</p>
-<p>封装：将零散的数据和算法放在一个集合里，方便管理和使用</p>
-<p>复用性：公共功能、过程的抽象，体现为能被重复使用的类、方法，就要要求我们针对某一类功能而不是针对某一个功能去设计</p>
-<p>扩展性：增加新的功能不影响原来已经封装好的功能</p>
-<h4 id="vs项目"><a href="#vs项目" class="headerlink" title="vs项目"></a>vs项目</h4><p>.sln文件对应的是解决方案，其它的文件是打开过程中产生的临时文件，是可以删掉的</p>
-<p>Debug里是生成的可执行程序，调试版本，生成的程序比较大</p>
-<p>真正上线之前要生成一个release版本</p>
-<p>给别人分享代码是Debug和release都是不需要的</p>
-<h4 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h4><p>头文件不需要加.h</p>
-<p>需要打开一个命名空间</p>
-<h5 id="使用一个命名空间"><a href="#使用一个命名空间" class="headerlink" title="使用一个命名空间"></a>使用一个命名空间</h5><blockquote>
-<p>1.using namespace 命名空间名：注意和其它命名空间名字冲突问题</p>
-<p>2.手动指定命名空间及成员</p>
-<p>3.显式的指定使用命名空间里的成员</p>
-</blockquote>
-<h5 id="定义命名空间：区分同一个作用域下的相同成员或者函数"><a href="#定义命名空间：区分同一个作用域下的相同成员或者函数" class="headerlink" title="定义命名空间：区分同一个作用域下的相同成员或者函数"></a>定义命名空间：区分同一个作用域下的相同成员或者函数</h5><p>namespace AA{</p>
-<p>};</p>
-<p>如果全局和命名空间有相同变量，优先使用全局的，如果全局没有再使用命名空间暴露出来的</p>
-<h5 id="作用域：成员能使用的一个范围"><a href="#作用域：成员能使用的一个范围" class="headerlink" title="作用域：成员能使用的一个范围"></a>作用域：成员能使用的一个范围</h5><p>::作用域运算符，::前未指定作用域即全局作用域</p>
-<p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670387586358.png" alt="1670387586358"></p>
-<p>下面的A输出的值是30</p>
-<h4 id="动态申请空间"><a href="#动态申请空间" class="headerlink" title="动态申请空间"></a>动态申请空间</h4><h5 id="C语言动态申请空间malloc"><a href="#C语言动态申请空间malloc" class="headerlink" title="C语言动态申请空间malloc"></a>C语言动态申请空间malloc</h5><h5 id="new类型"><a href="#new类型" class="headerlink" title="new类型"></a>new类型</h5><p>变量</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//int *p1 = new int;//申请空间</span><br><span class="line">int *p1 = new int(10);//申请空间并初始化指定值</span><br><span class="line"></span><br><span class="line">delete p1;//释放空间</span><br><span class="line">p1 = NULL;</span><br></pre></td></tr></table></figure>
-
-<p>数组</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//int* p3 =  new int[10];//申请空间，返回数组的首地址</span><br><span class="line">int* p3 =  new int[10]();//申请空间并初始化</span><br><span class="line"></span><br><span class="line">delete []p3;//释放数组需要加上括号</span><br></pre></td></tr></table></figure>
-
-<p>指针</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int **p4 = new int*; //指针的地址</span><br><span class="line">int* * p5 = new int*[];//指针数组</span><br><span class="line">int (**p6)[] = new (int(*) []);//数组指针</span><br></pre></td></tr></table></figure>
-
-<p>二维数组</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int(*p7)[3] = new int [2][3]</span><br></pre></td></tr></table></figure>
-
-<h5 id="C和C-的相同点与不同点"><a href="#C和C-的相同点与不同点" class="headerlink" title="C和C++的相同点与不同点"></a>C和C++的相同点与不同点</h5><p>相同点：在堆区动态申请空间</p>
-<p>区别：</p>
-<blockquote>
-<p>1.new - delete C++关键字，编译器支持，malloc-free函数，需要头文件支持</p>
-<p>2.malloc需要显式指定所需要的空间大小，new需要类型，根据类型计算所需要的空间</p>
-<p>3.malloc  void* 需要强转，new不需要</p>
-<p>**4.new-delete申请、释放对象内存空间，会自动调用构造函数和析构函数</p>
-</blockquote>
-<h4 id="BOOL-bool"><a href="#BOOL-bool" class="headerlink" title="BOOL  -  bool"></a>BOOL  -  bool</h4><blockquote>
-<p>1.C:BOOL windows 系统提供 int 的别名（typedef）</p>
-<p>C++:bool关键字</p>
-<p>2.C:TRUE FALSE 宏</p>
-<p>C++:true  false  关键字</p>
-<p>3.C:BOOL类型变量 占用4个字节空间</p>
-<p>C++:占用1个字节空间</p>
-</blockquote>
-<h4 id="string"><a href="#string" class="headerlink" title="string"></a>string</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string str = &quot;cxr&quot;;//字符串定义</span><br><span class="line">string str1 = &quot;cc&quot;;</span><br><span class="line">str1 = &quot;xx&quot;;//字符串重新赋值</span><br><span class="line"></span><br><span class="line">string str3 = &quot;cxr&quot; + str;//字符串利用操作符拼接</span><br></pre></td></tr></table></figure>
-
-<h5 id="字符串截取"><a href="#字符串截取" class="headerlink" title="字符串截取"></a>字符串截取</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string str = &quot;123456&quot;;</span><br><span class="line"></span><br><span class="line">string str1 = str.substr(3,2);//字符串截取    str1=45</span><br></pre></td></tr></table></figure>
-
-<h5 id="const-char-和string转换"><a href="#const-char-和string转换" class="headerlink" title="const char*和string转换"></a>const char*和string转换</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//string -&gt; const char*</span><br><span class="line">const char *p =  str.c_str();</span><br><span class="line"></span><br><span class="line">//const char* -&gt; string</span><br><span class="line">string str = (char*)str;</span><br></pre></td></tr></table></figure>
-
-<h4 id="NULL-nullptr"><a href="#NULL-nullptr" class="headerlink" title="NULL  nullptr"></a>NULL  nullptr</h4><blockquote>
-<p>1.C:NULL是一个宏，整型数字</p>
-<p>C++:nullptr关键字</p>
-<p>2.NULL：代表整数0</p>
-<p>nullptr：代表空指针</p>
-</blockquote>
-<h4 id="功能函数"><a href="#功能函数" class="headerlink" title="功能函数"></a>功能函数</h4><blockquote>
-<p>在函数声明处，函数参数可以指定默认值，从右往左依次制定，不能间断</p>
-<p>如果函数声明和定义分开，在函数声明处指定默认值即可</p>
-</blockquote>
-<h5 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h5><blockquote>
-<p>在同一个作用域下，函数名相同，参数列表不同（参数的类型，数量，顺序），对返回值没有要求的多个函数</p>
-<p>编译器可以根据重载函数的参数自动区别调用对应的函数</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//不是函数重载，而是函数重定义，二者函数参数都是指针</span><br><span class="line">void func1(char *p)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void func1(char arr[])</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//是函数重载</span><br><span class="line">void show(int a)&#123;</span><br><span class="line">	cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line">void show(int &amp;a)&#123;</span><br><span class="line">	cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//定义函数指针区分两个函数</span><br><span class="line">void (*p_fun1)(int) = &amp;show;</span><br><span class="line">void (*p_fun2)(int&amp;) = &amp;show;</span><br><span class="line"></span><br><span class="line">//调用函数指针</span><br><span class="line">(*p_fun1)(a);</span><br><span class="line">(*p_fun2)(a);</span><br></pre></td></tr></table></figure>
-
-<h5 id="函数传参"><a href="#函数传参" class="headerlink" title="函数传参"></a>函数传参</h5><p>函数传参三种形式，值  地址  引用（不推荐值传递，尤其是复合类型）</p>
-<p>如果在函数内修改实参，一定要地址、引用传递</p>
-<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p>引用：对已存在的一块内存起别名，引用一旦定义就必须初始化，指向一块空间</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int a = 10;</span><br><span class="line">int &amp;b = a; //并不是取地址，而是定义引用</span><br><span class="line">//a和b的值和地址都是一样的，无论二者谁的值改变，另一个都会改变</span><br><span class="line">//两个函数都可以通过形参改变实参</span><br><span class="line">void fun (int *p)&#123;</span><br><span class="line"> *p = 20;</span><br><span class="line">&#125;</span><br><span class="line">void fun (int &amp;p)&#123;</span><br><span class="line"> p = 20;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h5 id="引用和指针的区别"><a href="#引用和指针的区别" class="headerlink" title="引用和指针的区别"></a>引用和指针的区别</h5><blockquote>
-<p>1.引用定义就要初始化，指针可以不用初始化（不推荐）</p>
-<p>2.引用一旦引用某个空间，就不能再引用其他空间，指针可以修改其指向的空间</p>
-<p>3.有空的指针，没有空的引用</p>
-<p>4.引用不会额外开辟空间，指针会开辟存储地址的空间</p>
-<p>5.指针可以有多级，引用不能有多级</p>
-</blockquote>
-<h4 id="类"><a href="#类" class="headerlink" title="类"></a>类</h4><p>类：完成某一功能相关的数据和算法的集合</p>
-<p>类名一般是以C开头，类是一个抽象的概念</p>
-<h5 id="C-中类和结构体的区别"><a href="#C-中类和结构体的区别" class="headerlink" title="C++中类和结构体的区别"></a>C++中类和结构体的区别</h5><blockquote>
-<p>1.默认的访问修饰符不同，结构体public，类private</p>
-<p>2.默认的继承方式不同，结构体public，类private</p>
-</blockquote>
-<h5 id="访问修饰符："><a href="#访问修饰符：" class="headerlink" title="访问修饰符："></a>访问修饰符：</h5><p>约束类成员的一个使用范围，默认的访问修饰符是private私有的</p>
-<blockquote>
-<p>private：私有的，类成员只能在类内使用</p>
-<p>protected：保护的，类成员在类内核子类中可以使用</p>
-<p>public：公共的，类成员在类内和类外，只要能定义对象的地方都可以使用</p>
-</blockquote>
-<p>具体概念：用类实例化的一个变量，对象</p>
-<h5 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h5><blockquote>
-<p>无返回值（不是void，而是真的没有）函数名时当前的类名，无参，函数体代码为空</p>
-<p>在定义对象的时候自动调用，用来初始化类成员属性,构造函数允许有多个，他们是函数重载的关系</p>
-<p>一旦手动重构了构造函数，编译器将不再提供默认的无参构造</p>
-</blockquote>
-<h5 id="析构函数"><a href="#析构函数" class="headerlink" title="析构函数"></a>析构函数</h5><blockquote>
-<p>编译器会默认提供</p>
-<p>默认的析构函数：无返回值（不是void，而是真的没有）函数名时当前的类名，无参，函数体代码为空</p>
-<p>析构函数只允许有一个，并且无参数</p>
-<p>析构函数作用：用来回收成员申请的额外的空间，在对象声明周期结束前（对象回收前）自动调用</p>
-<p>一旦手动重构了析构函数，编译器将不再提供默认的无参析构</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">class CPeople&#123;</span><br><span class="line">public:</span><br><span class="line">	CPeople()&#123;	//构造函数</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	CPeople(string name)&#123;	//构造函数</span><br><span class="line">		m_strName = name;</span><br><span class="line">		m_bSex = true;</span><br><span class="line">		m_nAge = 20;</span><br><span class="line">		m_pNote = nullptr;</span><br><span class="line">		</span><br><span class="line">		m_pNote = new char[10]();</span><br><span class="line">	&#125;</span><br><span class="line">	~CPeople()&#123;	//析构函数</span><br><span class="line">		if(m_pNote)&#123;</span><br><span class="line">			delete []m_pNote;</span><br><span class="line">			m_pNote = nullptr;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">public:</span><br><span class="line">    void eat()&#123;		//成员函数（成员方法）</span><br><span class="line">            cout&lt;&lt;m_strName&lt;&lt;&quot;正在吃饭&quot;&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">public:</span><br><span class="line">	string m_strName;//类成员属性（类成员变量）以m_开头</span><br><span class="line">	char * m_pNote;</span><br><span class="line">protected:</span><br><span class="line">	bool m_bSex;</span><br><span class="line">private:			//对于私有、保护的成员，可以提供一对公共的set/get接口，按照指定的规则进行设置访问</span><br><span class="line">					//数据成员</span><br><span class="line">	int m_nAge;</span><br><span class="line">public:</span><br><span class="line">	void SetAge(int age)&#123;	</span><br><span class="line">		if(0&lt;=age &amp;&amp; age &lt;=150)&#123;</span><br><span class="line">			m_nAge = age;</span><br><span class="line">		&#125;</span><br><span class="line">		m_nAge = 0;</span><br><span class="line">	&#125;</span><br><span class="line">	int GetAge()&#123;</span><br><span class="line">		return m_nAge;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CPeople peo;	//对象</span><br><span class="line">	peo.m_strName = &quot;黎明&quot;;</span><br><span class="line">	peo.eat();</span><br><span class="line">	peo.SetAge(20);</span><br><span class="line">	peo.GetAge();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="封装链表"><a href="#封装链表" class="headerlink" title="封装链表"></a>封装链表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">struct Node&#123;</span><br><span class="line">	int val;</span><br><span class="line">	Node *pNext;</span><br><span class="line">	Node(int v)&#123;</span><br><span class="line">		val = v;</span><br><span class="line">		pNext = nullptr;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">class CMyList&#123;</span><br><span class="line">private:</span><br><span class="line">	Node* m_pHead;</span><br><span class="line">	Node* m_pEnd;</span><br><span class="line">	int m_nSize;</span><br><span class="line">public:</span><br><span class="line">	CMyList()&#123;</span><br><span class="line">		m_pHead = nullptr;</span><br><span class="line">		m_pEnd = nullptr;</span><br><span class="line">		m_nSize = 0;</span><br><span class="line">	&#125;</span><br><span class="line">	~CMyList()&#123;</span><br><span class="line">		//遍历链表回收节点空间</span><br><span class="line">		Node* pTemp = nullptr;//用于标记要删除的结点</span><br><span class="line">		while(m_pHead)&#123;</span><br><span class="line">			pTemp = m_pHead;</span><br><span class="line">			m_pHead = m_pHead-&gt;m_pNext;</span><br><span class="line">			</span><br><span class="line">			//删除标记的</span><br><span class="line">			delete pTemp;</span><br><span class="line">			pTemp = nullptr;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	//尾添加</span><br><span class="line">	void PushBack(int v)&#123;</span><br><span class="line">		//new一个结点</span><br><span class="line">		Node* pNode = new Node(v);</span><br><span class="line">		if(m_pHead)&#123;//空链表</span><br><span class="line">			m_pEnd-&gt;pNext = pNode;</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			m_pHead = pNode;</span><br><span class="line">		&#125;</span><br><span class="line">		m_pEnd = pNode;</span><br><span class="line">		m_nSize++;</span><br><span class="line">	&#125;</span><br><span class="line">	//头删除</span><br><span class="line">	</span><br><span class="line">	//查看链表</span><br><span class="line">	</span><br><span class="line">	//获取长度</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	//Node *pNode = new Node(10);</span><br><span class="line">	//cout&lt;&lt;pNode-&gt;val&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	CMyList mylist;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="对象的种类"><a href="#对象的种类" class="headerlink" title="对象的种类"></a>对象的种类</h3><h5 id="栈区局部对象"><a href="#栈区局部对象" class="headerlink" title="栈区局部对象"></a>栈区局部对象</h5><blockquote>
-<p>遇到函数的返回或者}声明周期结束，自动回收</p>
-<p>如果是new出来的对象需要去手动delete回收</p>
-</blockquote>
-<h5 id="全局对象"><a href="#全局对象" class="headerlink" title="全局对象"></a>全局对象</h5><blockquote>
-<p>生命周期：程序开始创建，程序退出（销毁）被回收</p>
-<p>作用域：整个应用程序，可以跨文件去使用</p>
-<p>extern  变量名</p>
-</blockquote>
-<h5 id="静态全局"><a href="#静态全局" class="headerlink" title="静态全局"></a>静态全局</h5><blockquote>
-<p>生命周期：程序开始创建，程序退出（销毁）被回收</p>
-<p>作用域：只能在当前文件中使用，具有文件作用域</p>
-</blockquote>
-<h5 id="静态局部"><a href="#静态局部" class="headerlink" title="静态局部"></a>静态局部</h5><blockquote>
-<p>生命周期：第一次调用包含这个对象的函数呗调用执行定义对象的代码，直到程序退出结束</p>
-</blockquote>
-<h5 id="临时对象"><a href="#临时对象" class="headerlink" title="临时对象"></a>临时对象</h5><blockquote>
-<p>临时（匿名）对象，生命周期仅限于当前行，遇到；结束</p>
-</blockquote>
-<h4 id="探索类成员"><a href="#探索类成员" class="headerlink" title="探索类成员"></a>探索类成员</h4><h5 id="类成员属性"><a href="#类成员属性" class="headerlink" title="类成员属性"></a>类成员属性</h5><p>非静态类成员属性，属于对象，在定义对象时才存在，定义多个对象存在多份，之间互不影响</p>
-<p>类成员函数：属于这个类的，不属于对象（存在与否不依赖对象定义与否），在编译期就存在了，只有一份</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">class CTest&#123;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CTest tst;//空类申请的对象大小占1个字节：标识当前对真实存在于内存中</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class CTest&#123;</span><br><span class="line">	int m_a;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CTest tst;//大小占4个字节：创建对象时类成员被自动分配空间</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class CTest&#123;</span><br><span class="line">	int m_a;</span><br><span class="line">	double m_b;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CTest tst;//大小占16个字节：int占4字节，double占8字节，内存对齐所以是16</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="this指针"><a href="#this指针" class="headerlink" title="this指针"></a>this指针</h5><p>this指针：当前类对象的指针，类中【非静态成员函数】的参数列表中，默认编译器加的一个隐藏的参数，在参数列表中的第一个参数，指向了调用该函数的对象</p>
-<p>作用：连接对象和类成员之间的桥梁</p>
-<p>静态成员函数  与普通成员函数的区别：</p>
-<blockquote>
-<p>静态成员函数没有隐藏的this指针参数</p>
-<p>不能使用普通的成员（成员属性+成员函数），只能使用静态成员</p>
-</blockquote>
-<p>静态成员属性：不属于对象，属于类的，只有一份，多个对象之间共享这个静态成员，在编译期就存在了，不依赖对象的存在而存在</p>
-<p>在类外进行初始化：类型   类名：：变量名   &#x3D;   初始化值。</p>
-<p>在没有对象的情况下，可以通过【类名::】调用，也可以通过对象调用</p>
-<h5 id="编译错误：无法解析的外部符号"><a href="#编译错误：无法解析的外部符号" class="headerlink" title="编译错误：无法解析的外部符号"></a>编译错误：无法解析的外部符号</h5><p>有声明无定义</p>
-<h4 id="const"><a href="#const" class="headerlink" title="const"></a>const</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">class CTest&#123;</span><br><span class="line">public:</span><br><span class="line">	const int m_a;</span><br><span class="line">	mutable int m_b;	//关键字：mutable   在常函数中，允许修改变量的值</span><br><span class="line">	//初始化参数列表，真正初始化类成员的地方，const成员的初始化必须在初始化参数列表初始化，</span><br><span class="line">	//普通的成员也可以初始化，多个成员初始化用逗号分隔</span><br><span class="line">	//初始化成员的顺序，是成员在类中声明的先后顺序</span><br><span class="line">	CTest():m_a(10)&#123;</span><br><span class="line">		//m_a = 10;	严格来说，赋值操作</span><br><span class="line">		m_b = 20;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	//常函数:参数列表后加const修饰,const修饰的是this指针</span><br><span class="line">	//常函数不能【随便】修改类成员变量</span><br><span class="line">	void show(/*    const CTest * const this   */)const&#123;</span><br><span class="line">		cout&lt;&lt;m_a&lt;&lt;endl;</span><br><span class="line">		this-&gt;m_b = 90;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	const int a = 10;	//定义了就要初始化，之后不能修改</span><br><span class="line">	int b = 20;</span><br><span class="line">	</span><br><span class="line">	const int * p1 = &amp;a ; 	//常量指针，const修饰的是*p</span><br><span class="line">	//*p = 30; 	不能通过当前这个指针去修改指向的空间的值</span><br><span class="line">	</span><br><span class="line">	int * const p2 = &amp;b;//指针常量，const修饰的是p指针</span><br><span class="line">	*p2 = 30;//通过指针修改指向空间里的值</span><br><span class="line">	//p2 = &amp;a;	修改指针的指向，非法</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="编译期运行期"><a href="#编译期运行期" class="headerlink" title="编译期运行期"></a>编译期运行期</h4><p>编译期：</p>
-<blockquote>
-<p>源程序交给编译器编译、生成的过程，最终得到可执行文件</p>
-<p>访问修饰符、成员的作用域</p>
-</blockquote>
-<p>运行期：</p>
-<blockquote>
-<p>定义、实例化</p>
-</blockquote>
-<h4 id="inline"><a href="#inline" class="headerlink" title="inline"></a>inline</h4><p>关键字：内联</p>
-<p>优点：程序执行效率提高了，空间换时间</p>
-<p>缺点：内存会增大</p>
-<p>内联函数：代码少，逻辑简单</p>
-<p>建议性关键字：递归函数即使加上inline，编译器也不会认为是内联函数</p>
-<h4 id="类之间的横向关系"><a href="#类之间的横向关系" class="headerlink" title="类之间的横向关系"></a>类之间的横向关系</h4><h5 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h5><p>部分与整体，包含与被包含，有生命周期约束关系</p>
-<h5 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h5><p>完成某个功能【必须】用到被依赖的对象，一般当做工具对待，没有有生命周期约束关系</p>
-<h5 id="关联"><a href="#关联" class="headerlink" title="关联"></a>关联</h5><p>可有可无的平等的关系，没有有生命周期约束关系</p>
-<h5 id="聚合"><a href="#聚合" class="headerlink" title="聚合"></a>聚合</h5><p>被聚合的对象组合起来（容器），统一去管理，有生命周期约束关系 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line">class CHand&#123;</span><br><span class="line">public:</span><br><span class="line">	void move()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;小手挥舞&quot;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CComputer&#123;</span><br><span class="line">public:</span><br><span class="line">	void Compile()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;正在生成可执行程序&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CFriend&#123;</span><br><span class="line">public:</span><br><span class="line">	void play()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;我的朋友正在玩耍&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CPeople&#123;</span><br><span class="line">public:</span><br><span class="line">	CHand m_hand;</span><br><span class="line">	CFriend *m_pFri;</span><br><span class="line">	</span><br><span class="line">	CPeople()&#123;</span><br><span class="line">		m_pFri = nullptr;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	void clap()&#123;</span><br><span class="line">		m_hand.move();</span><br><span class="line">		cout&lt;&lt;&quot;发出阵阵响声&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	void program(CCoomputer* pComp)&#123;</span><br><span class="line">		if(pComp)&#123;</span><br><span class="line">			m_hand.move();</span><br><span class="line">			cout&lt;&lt;&quot;噼里啪啦，敲击键盘，输入一行行代码&quot;&lt;&lt;endl;</span><br><span class="line">			pComp-&gt;Compile();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	void playwangzhe()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;准备打王者&quot;&lt;&lt;endl;</span><br><span class="line">		if(m_pFri)&#123;</span><br><span class="line">			cout&lt;&lt;&quot;走啊开黑去&quot;&lt;&lt;endl;</span><br><span class="line">			m_pFri-&gt;play();</span><br><span class="line">			cout&lt;&lt;&quot;成功拿下五杀&quot;&lt;&lt;endl;</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			cout&lt;&lt;&quot;自己匹配&quot;&lt;&lt;endl;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CFamily&#123;</span><br><span class="line">public:</span><br><span class="line">	CPeople* peoArr[10];//加指针可以动态申请，在构造函数中new的CPeople对象是自定义的</span><br><span class="line">						//不加指针是是固定的10个对象</span><br><span class="line">	CFamily()&#123;</span><br><span class="line">		for(int i=0;i&lt;10;i++)&#123;</span><br><span class="line">			peoArr[i] = nullptr;</span><br><span class="line">		&#125;</span><br><span class="line">		peoArr[0] = new CPeople;</span><br><span class="line">		peoArr[1] = new CPeople;</span><br><span class="line">		peoArr[2] = new CPeople;</span><br><span class="line">	&#125;</span><br><span class="line">	~CFamily()&#123;</span><br><span class="line">		for(int i=0;i&lt;10;i++)&#123;</span><br><span class="line">			if(peoArr[i])&#123;</span><br><span class="line">				delete peoArr[i];</span><br><span class="line">				peoArr[i] = nullptr;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">public:</span><br><span class="line">	void AllPeopleProgram(CCpmputer* pComp)&#123;</span><br><span class="line">		for(int i=0;i&lt;10;i++)&#123;</span><br><span class="line">			if(peoArr[i])&#123;</span><br><span class="line">				cout&lt;&lt;&quot;第&quot;&lt;&lt;i&lt;&lt;&quot;:&quot;&lt;&lt;endl;</span><br><span class="line">				peoArr[i]-&gt;program(pComp);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	//组合、复合</span><br><span class="line">	CPeople peo;</span><br><span class="line">	peo.m_hand.move();</span><br><span class="line">	</span><br><span class="line">	//依赖</span><br><span class="line">	CPeople peo;</span><br><span class="line">	CComputer *pComp = new CComputer;</span><br><span class="line">	peo.program(pComp);</span><br><span class="line">	</span><br><span class="line">	delete pComp;</span><br><span class="line">	pComp = nullptr;</span><br><span class="line">	</span><br><span class="line">	//关联</span><br><span class="line">	CPeople peo;</span><br><span class="line">	peo.playwangzhe();</span><br><span class="line">	</span><br><span class="line">	CFriend fri;</span><br><span class="line">	peo.m_pFri = &amp;fri;</span><br><span class="line">	peo.playwangzhe();</span><br><span class="line">	</span><br><span class="line">	//聚合</span><br><span class="line">	CFamily fam;</span><br><span class="line">	CComputer *pComp = new CComputer;</span><br><span class="line">	fam.AllPeopleProgram(pComp);</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670512441877.png" alt="1670512441877"></p>
-<h4 id="类之间的纵向关系：继承"><a href="#类之间的纵向关系：继承" class="headerlink" title="类之间的纵向关系：继承"></a>类之间的纵向关系：继承</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">//父类（基类）</span><br><span class="line">class CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_fa;</span><br><span class="line">	int m_money;</span><br><span class="line">	</span><br><span class="line">	/*CFather()&#123;</span><br><span class="line">		m_fa = 30;</span><br><span class="line">		m_money = 100;</span><br><span class="line">	&#125;*/</span><br><span class="line">	CFather(int a,int b)&#123;</span><br><span class="line">		m_fa = a;</span><br><span class="line">		m_money = b;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CFather2&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_fa;</span><br><span class="line">	int m_money;</span><br><span class="line">	</span><br><span class="line">	/*CFather2()&#123;</span><br><span class="line">		m_fa = 30;</span><br><span class="line">		m_money = 100;</span><br><span class="line">	&#125;*/</span><br><span class="line">	CFather2(int a,int b)&#123;</span><br><span class="line">		m_fa = a;</span><br><span class="line">		m_money = b;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//子类（派生类）:子类可以使用父类成员</span><br><span class="line">//定义子类对象，构造顺序  父类-&gt;子类，父类的默认无参构造可以被自动调用</span><br><span class="line">//父类没有无参构造时，在子类的的初始化参数列表中，手动调用父类带参数的构造函数</span><br><span class="line">//子类对象  生命周期结束时，调用析构顺序  子类-&gt;父类</span><br><span class="line">class CSon: public CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_son;</span><br><span class="line">	int m_money;</span><br><span class="line">	CFather fa;</span><br><span class="line">	</span><br><span class="line">	CSon():CFather(100,101),fa(111,222)&#123;</span><br><span class="line">		m_son = 40;</span><br><span class="line">		m_money = 500;</span><br><span class="line">	&#125;</span><br><span class="line">	~CSon()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;~~~~~Cson&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	void show()&#123;</span><br><span class="line">		cout&lt;&lt;m_fa&lt;&lt;endl;</span><br><span class="line">		cout&lt;&lt;m_son&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	//CSon son;	//定义子类对象</span><br><span class="line">	//son.m_son = 10;</span><br><span class="line">	//son.fa = 20;</span><br><span class="line">	</span><br><span class="line">	//son.show();</span><br><span class="line">	</span><br><span class="line">	CSon son;</span><br><span class="line">	//子类和父类有同名的成员，使用类名::进行区分</span><br><span class="line">	cout&lt;&lt;son.m_money&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;son.CFather::m_money&lt;&lt;endl;</span><br><span class="line">	//定义子类对象，包含父类成员，内存分布，先父类成员，再子类成员</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="继承的好处"><a href="#继承的好处" class="headerlink" title="继承的好处"></a>继承的好处</h5><p>将一些功能相似的类的公共成员，单独抽离出来，形成一个类，这个类就是父类，子类继承父类，包含了这些公共的成员，提高了程序代码的复用性、扩展性、后期更容易维护</p>
-<h5 id="继承方式"><a href="#继承方式" class="headerlink" title="继承方式"></a>继承方式</h5><p>继承方式：描述了父类成员在子类中表现的属性</p>
-<p>public：共有继承：</p>
-<p>父类			   子类</p>
-<p>public			public</p>
-<p>protected		protected</p>
-<p>private			不可访问</p>
-<p>protected：保护继承</p>
-<p>父类			   子类</p>
-<p>public			protected</p>
-<p>protected		protected</p>
-<p>private			不可访问</p>
-<p>private：私有继承</p>
-<p>父类			   子类</p>
-<p>public			private</p>
-<p>protected		private</p>
-<p>private			不可访问</p>
-<h5 id="隐藏"><a href="#隐藏" class="headerlink" title="隐藏"></a>隐藏</h5><p>父类与子类有同名的成员，是允许的，默认调用子类</p>
-<h5 id="类成员函数指针"><a href="#类成员函数指针" class="headerlink" title="类成员函数指针"></a>类成员函数指针</h5><p>在继承下，允许未经转换，父类的指针指向子类的对象</p>
-<p>好处：统一多种类型，提高复用性、扩展性</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">class CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	void cost(int a)&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CFather::cost&quot;&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class CSon: public CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	void eat()&#123;</span><br><span class="line">		cout&lt;&lt;CSon::eat&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//类成员函数指针：::*C 整体运算符，不可分开，定义类成员函数指针</span><br><span class="line">typedef void (CSon::*P_FUN1)();</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">	CSon son;</span><br><span class="line">	CSon *pSon = new CSon;</span><br><span class="line">	</span><br><span class="line">	PFUN1 p_fun1 = &amp;CSon::eat;</span><br><span class="line">	</span><br><span class="line">	(son.*p_fun1)();`//.* , -&gt;*  整体运算符，通过对象调用函数指针指向的函数</span><br><span class="line">	(pSon-&gt;*p_fun1)();</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="父类指针要使用子类的成员"><a href="#父类指针要使用子类的成员" class="headerlink" title="父类指针要使用子类的成员"></a>父类指针要使用子类的成员</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">class CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	void cost(int a)&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CFather::cost&quot;&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class CSon: public CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	void eat()&#123;</span><br><span class="line">		cout&lt;&lt;CSon::eat&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void show(CFather * fa)&#123;</span><br><span class="line">	fa-&gt;cost();</span><br><span class="line">	</span><br><span class="line">	//正常情况下，函数参数传入的是父类的指针，所以只能调用父类的函数</span><br><span class="line">	//那么怎么调用子类的函数呢  这就要用到【函数指针】</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//类成员函数指针：::*C 整体运算符，不可分开，定义类成员函数指针</span><br><span class="line">typedef void (CFather::*P_FUN)();</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CFather * pFa = new CSon;</span><br><span class="line">	</span><br><span class="line">	P_FUN p_fun = (p_FUN)&amp;CSon::show;</span><br><span class="line">	(pFa-&gt;*p_fun)();</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">class CCalculate&#123;</span><br><span class="line">public:</span><br><span class="line">	CCalculate()&#123;</span><br><span class="line">		p_fun[add] = &amp;CCalculate::Add;</span><br><span class="line">		p_fun[sub] = &amp;CCalculate::Sub;</span><br><span class="line">		p_fun[mul] = &amp;CCalculate::Mul;</span><br><span class="line">		p_fun[div] = &amp;CCalculate::Div;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	enum cal_symbol&#123;//计算标识</span><br><span class="line">		add = 0,</span><br><span class="line">		sub,</span><br><span class="line">		mul,</span><br><span class="line">		div</span><br><span class="line">	&#125;;</span><br><span class="line">private:</span><br><span class="line">	int (CCalculate::*p_fun[4])(int ,int );</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">private:</span><br><span class="line">	int Add(int a,int b)&#123;</span><br><span class="line">		return a+b;</span><br><span class="line">	&#125;</span><br><span class="line">	int Sub(int a,int b)&#123;</span><br><span class="line">		return a-b;</span><br><span class="line">	&#125;</span><br><span class="line">	int Mul(int a,int b)&#123;</span><br><span class="line">		return a*b;</span><br><span class="line">	&#125;</span><br><span class="line">	int Div(int a,int b)&#123;</span><br><span class="line">		return a/b;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">public:</span><br><span class="line">	int fun_calculate(cal_symbol sym,int a,int b)&#123;</span><br><span class="line">		return (this-&gt;*p_fun[sym])(a,b);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CCalculate cal;</span><br><span class="line">	int res = cal.fun_calculate(CCalculate::add,10,20);</span><br><span class="line">	cout&lt;&lt;res&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><p>多态：相同的行为方式导致了不同的行为结果，同一行语句展现了多种不同的表现形态，多态性</p>
-<p>在继承下，父类的指针可以指向任何继承于该类的子类，多种子类具有多种形态由父类的指针进行统一管理</p>
-<p>父类的指针具有多种形态</p>
-<h5 id="多态形成条件："><a href="#多态形成条件：" class="headerlink" title="多态形成条件："></a>多态形成条件：</h5><blockquote>
-<p>1.有继承关系，存在父类-子类</p>
-<p>2.用父类的指针指向子类的对象</p>
-<p>3.父类中存在<strong>虚函数</strong>，子类<strong>重写</strong>父类的虚函数</p>
-</blockquote>
-<p>virtual：虚函数的关键字</p>
-<p>重写：子类定义了和父类一模一样（函数名、参数列表、返回值）的虚函数</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	void show_fa()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;show_fa&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	virtual void show()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CFather::show_&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CSon:public CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	virtual void show()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CSon::show_&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CFather *p_fa = new CSon;</span><br><span class="line">	p_fa-&gt;show_fa();</span><br><span class="line">	</span><br><span class="line">	p_fa-&gt;show();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="虚函数"><a href="#虚函数" class="headerlink" title="虚函数"></a>虚函数</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">_vfptr：属于对象的，（虚函数指针）类型  void**(二级指针)指向了一个数组（虚函数列表）,当类中存在任意虚函数时，定义对象会在内存空间的【前面】多分配指针的空间（即vfptr的空间），</span><br><span class="line">执行构造函数，在初始化参数列表中进行初始化，指向了__vftable</span><br><span class="line">多个对象会存在多份_vfptr，指向了同一个__vftable</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">__vftable:虚函数列表，数组的每个元素是指针，指向虚函数的指针，属于类，在编译期自动创建</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class CTest&#123;</span><br><span class="line">public:</span><br><span class="line">	virtual void show()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;virtual show&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	virtual void play()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;virtual play&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;sizeof(CTest)&lt;&lt;endl;	//4</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>调用虚函数的流程：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">找到对象内存空间的_vfptr，通过_vfptr找到虚函数列表，定位虚函数列表中的函数指针，通过指针调用具体的虚函数</span><br></pre></td></tr></table></figure>
-
-<p>虚函数和普通函数的区别</p>
-<blockquote>
-<p>1.虚函数背后的调用流程不同，虚函数调用效率比普通函数低</p>
-<p>2.使用场景不同，虚函数实现多态，普通函数不能实现多态</p>
-</blockquote>
-<h5 id="多态的实现原理"><a href="#多态的实现原理" class="headerlink" title="多态的实现原理"></a>多态的实现原理</h5><p>继承下：虚函数指针指向了 创建对象的类的虚函数列表，子类不但继承了父类的成员</p>
-<p>还继承了父类的虚函数列表，子类会检查是否有重写父类的虚函数，如果有会将父类的虚函数地址替换掉</p>
-<p>这个动作叫覆盖，如果没有，会保留父类的虚函数，如果子类单独有自己的虚函数，会在虚函数列表结尾依次添加</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	virtual void show()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CFather::show_son&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CSon:public CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	virtual void show()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CSon::show_son&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CFather *p_fa = new CSon;</span><br><span class="line">	p_fa-&gt;show_fa();</span><br><span class="line">	</span><br><span class="line">	p_fa-&gt;show_son();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="构造析构顺序"><a href="#构造析构顺序" class="headerlink" title="构造析构顺序"></a>构造析构顺序</h5><p>调用类析构取决于指针的类型</p>
-<p>虚析构函数：为了避免内存泄漏，当子类中会有指针成员变量时会用到</p>
-<p>虚析构函数使得在删除指向子类对象的基类指针时可以调用子类的析构函数达到释放子类中堆内存的目的，防止内存泄漏</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">class CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	CFather()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CFther&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	virtual ~CFather()&#123;	//虚析构，发生了多态</span><br><span class="line">		cout&lt;&lt;&quot;~~~~CFather&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CSon:public CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	CSon()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CSon&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	~CSon()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;CSon&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void show(CFather *p_fa)</span><br><span class="line">&#123;</span><br><span class="line">	delete p_fa;//调用类取决于指针的类型</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CFather *p_fa = new CSon;</span><br><span class="line">	show(p_fa);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="多态的缺点"><a href="#多态的缺点" class="headerlink" title="多态的缺点"></a>多态的缺点</h5><blockquote>
-<p>1.空间问题：虚函数指针在每个对象中都会存在一份，虚函数列表每个类存在一份</p>
-<p>2.效率问题</p>
-<p>3.安全性问题</p>
-</blockquote>
-<h5 id="纯虚函数"><a href="#纯虚函数" class="headerlink" title="纯虚函数"></a>纯虚函数</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//抽象类：包含纯虚函数的类称为抽象类，不能定义对象</span><br><span class="line">class CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	virtual void show() = 0;//纯虚函数,只声明，不用实现，最终的子类一定要定义实现纯虚函数</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//具体类</span><br><span class="line">class CSon:public CFather&#123;</span><br><span class="line">public:</span><br><span class="line">	void show()override&#123;	//override：要求当前这个函数一定是重写父类的虚函数</span><br><span class="line">		cout&lt;&lt;&quot;CSon::show&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="程序生成过程"><a href="#程序生成过程" class="headerlink" title="程序生成过程"></a>程序生成过程</h3><p>生成过程</p>
-<blockquote>
-<p>1.预处理：.i文件</p>
-<p>头文件的展开</p>
-<p>宏的替换</p>
-<p>预处理指令解析  #define   ，#if     #ifdef      #else   #elif   #endif</p>
-<p>去掉注释</p>
-<p>2.编译：预处理后的文件  生成汇编文件  .asm（汇编代码）</p>
-<p>词法解析、语法解析、语义分析、优化</p>
-<p>3.汇编：汇编文件进一步处理 ，生成目标机器指令（二进制文件.obj）</p>
-<p>4.链接：将多个目标文件（库文件）链接生成可执行程序（.exe，.out）</p>
-</blockquote>
-<h4 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//替换作用</span><br><span class="line">#define AA 10</span><br><span class="line"></span><br><span class="line">/*  反斜杠\:连接当前行和下一行，最后一行一般不加\ ，后面不要有任何字符（空格、tab、注释）   */</span><br><span class="line">#define BB for(int i=0;i&lt;AA;i++)&#123;\</span><br><span class="line">	cout&lt;&lt;i&lt;&lt;endl;\</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//宏可以带参数：替换作用，不会做表达式的计算和求解</span><br><span class="line">#define CC(NUM) for(int i=0;i&lt;NUM;i++)&#123;\</span><br><span class="line">	cout&lt;&lt;i&lt;&lt;endl;\</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//  ## 拼接</span><br><span class="line">#define DD()\</span><br><span class="line">	int a##b = 20;</span><br><span class="line">	</span><br><span class="line">//#：将参数转成字符串，相当于加双引号</span><br><span class="line">#define FF(PARAM)\</span><br><span class="line">	cout&lt;&lt;#PARAM&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">//#@：转成字符，相当于加单引号</span><br><span class="line">#define GG(PARAM)\</span><br><span class="line">	char a = #@PARAM;</span><br></pre></td></tr></table></figure>
-
-<h4 id="operator重载"><a href="#operator重载" class="headerlink" title="operator重载"></a>operator重载</h4><p>重载操作符operator：在程序中与到这个符号，通过调用当前重载操作符函数来行使操作符的功能</p>
-<p>一般有返回值，为了和后序的操作符继续操作</p>
-<p>匹配操作符 根据 重载操作符函数的参数的类型、顺序、数量</p>
-<p>分  类内、类外重载</p>
-<p>类内重载：this，作为类成员函数的第一个参数，通过当前类对象去调用，一般在操作符的左边，可以手动显式的调用参数</p>
-<p>类外：注意参数列表的顺序，必须包含自定义类型（类、结构体），有可能和类内重载的函数有冲突</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">class CTest2&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_b;</span><br><span class="line">	CTest2()&#123;</span><br><span class="line">		m_b=5;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">class CTest&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_a;</span><br><span class="line">	CTest()&#123;</span><br><span class="line">		m_a = 10;</span><br><span class="line">	&#125;</span><br><span class="line">	int operator+(/* CTest * const this */int a)&#123;//先指向类的对象，然后是参数，使用时要严格按照这</span><br><span class="line">												//定义的顺序,类内定义的重载操作符函数顺序不能改变</span><br><span class="line">		return this-&gt;m_a+a;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	int operator+=(int a)&#123;</span><br><span class="line">		return m_a+=a;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	int operator-(CTest2 &amp;tst2)&#123;</span><br><span class="line">		return m_a - tst2.m_b;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	int operator =(int a)&#123;</span><br><span class="line">		m_a = a;</span><br><span class="line">		return m_a;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	int operator++()&#123;//默认为左++</span><br><span class="line">		return ++m_a;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	int operator++(int)&#123;//右++,参数没有任何意义，就是为了区分左++，还是右++</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//-------------------------类外</span><br><span class="line">int operator+(int a,CTest &amp;tst)&#123;</span><br><span class="line">	return a + tst.m_a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int operator+(int a,int b)&#123;</span><br><span class="line">	//对于这种基本类型的重载有内置规则，不要自己定义</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ostream&amp; operator&lt;&lt;(ostream &amp;os,CTest &amp;tst)&#123;</span><br><span class="line">	os&lt;&lt;tst.m_a;</span><br><span class="line">	return os;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">istream&amp; operator&lt;&lt;(istream &amp;is,CTest &amp;tst)&#123;</span><br><span class="line">	is&gt;&gt;tst.m_a;</span><br><span class="line">	return is;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CTest tst;</span><br><span class="line">	CTest tst2;</span><br><span class="line">	cout&lt;&lt;tst2+(tst+20)&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><blockquote>
-<p>对于同一个操作符，指定不同的参数、顺序、数量，都有可能产生不同的含义</p>
-<p>参数的类型、顺序、数量都有一定的约束</p>
-<p>重载操作符函数 参数不能有默认值，不能改变操作符的使用规则，原来双目对应两个操作数</p>
-<p>不能改变操作符的优先级    和    结合性</p>
-<p>有些操作符  只能在类内重载：operator&#x3D;，-&gt;，[]，()</p>
-<p>不能重载的操作符【sizeof】、【?：】，【：：】【.】</p>
-<p>不能创建新的操作符</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class CTest&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_a;</span><br><span class="line">	CTest()&#123;</span><br><span class="line">		m_a = 10;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	int operator*(int a)&#123;//乘法</span><br><span class="line">		return m_a*a;</span><br><span class="line">	&#125;</span><br><span class="line">	int operator*()&#123;//间接引用</span><br><span class="line">		return m_a;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CTest tst;</span><br><span class="line">	*tst;		//tst.m_a</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="对象类型转换"><a href="#对象类型转换" class="headerlink" title="对象类型转换"></a>对象类型转换</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">class CTest&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_a;</span><br><span class="line">	int *m_p;</span><br><span class="line">	CTest()&#123;</span><br><span class="line">		m_a=10;</span><br><span class="line">		m_p = nullptr;</span><br><span class="line">	&#125;</span><br><span class="line">	int operator+(int a)&#123;//重载操作符</span><br><span class="line">		return m_a+a;</span><br><span class="line">	&#125;</span><br><span class="line">	operator int()&#123;//重载int类型,允许和重载操作符同时存在，但优先级低于重载操作符</span><br><span class="line">		cout&lt;&lt;&quot;operator int&quot;&lt;&lt;endl;</span><br><span class="line">		return this-&gt;m_a;</span><br><span class="line">	&#125;</span><br><span class="line">	operator bool()&#123;</span><br><span class="line">		cout&lt;&lt;&quot;operator bool&quot;&lt;&lt;endl;</span><br><span class="line">		return m_p;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int operator+(int a,CTest &amp;tst)&#123;</span><br><span class="line">	cout&lt;&lt;&quot;operator+&quot;&lt;&lt;endl;</span><br><span class="line">	return tst.m_a +a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CTest tst;</span><br><span class="line">	10+tst;//想让tst这个对象能像int类型一样去使用就需要重载类型</span><br><span class="line">	//--------------</span><br><span class="line">	</span><br><span class="line">	if(tst.m_p)&#123;</span><br><span class="line">		cout&lt;&lt;*tst.m_p&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	if(tst)&#123;</span><br><span class="line">		cout&lt;&lt;tst.m_p&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="Iterator"><a href="#Iterator" class="headerlink" title="Iterator"></a>Iterator</h4><p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670832832306.png" alt="1670832832306"></p>
-<p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670832877588.png" alt="1670832877588"></p>
-<p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\1670832935365.png" alt="1670832935365"></p>
-<h3 id="list-map"><a href="#list-map" class="headerlink" title="list-map"></a>list-map</h3><h4 id="list"><a href="#list" class="headerlink" title="list"></a>list</h4><p>iteator  迭代器：遍历容器（list）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;list&gt;</span><br><span class="line">#include&lt;algorithm&gt;	//该头文件包含了查找、排序等很多方法</span><br><span class="line"></span><br><span class="line">voif show(int v)&#123;</span><br><span class="line">	cout&lt;&lt;v&lt;&lt;&quot;   &quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	list&lt;int&gt; lst;		//定义链表</span><br><span class="line">	lst.push_back(1);</span><br><span class="line">	lst.push_back(2);</span><br><span class="line">	lst.push_back(3);</span><br><span class="line">	</span><br><span class="line">	lst.push_front(3);		//头添加</span><br><span class="line">	lst.push_front(2);</span><br><span class="line">	lst.push_front(1);</span><br><span class="line">	</span><br><span class="line">	list&lt;int&gt;::iterator ite;		//定义迭代器</span><br><span class="line">	ite =  lst.begin();			//返回头结点迭代器</span><br><span class="line">	</span><br><span class="line">	while(ite!=lst.end())&#123;		//end()  尾结点迭代器</span><br><span class="line">		cout&lt;&lt;*ite&lt;&lt;&quot;   &quot;&lt;&lt;endl;</span><br><span class="line">		ite++;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	lst.pop_back();//尾删除</span><br><span class="line">	lst.pop_front();//头删除</span><br><span class="line">	</span><br><span class="line">	for(int val:lst)&#123;		//增强for循环</span><br><span class="line">		cout&lt;&lt;val&lt;&lt;&quot;   &quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	//返回头尾结点里的值</span><br><span class="line">	cout&lt;&lt;lst.front()&lt;&lt;&quot;   &quot;&lt;&lt;lst.back()&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	cout&lt;&lt;&quot;链表的长度：&quot;&lt;&lt;lst.size()&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	//判断链表是否为空</span><br><span class="line">	if(lst.empty())&#123;</span><br><span class="line">		cout&lt;&lt;&quot;is empty&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		cout&lt;&lt;&quot;not is empty&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	//--------------------------------</span><br><span class="line">	//在链表中间插入结点</span><br><span class="line">	ite = ++lst.begin();</span><br><span class="line">	list&lt;int &gt;::iterator ite2 = lst.insert(ite,10);//在迭代器指向的结点之前插入，返回插入的结点的													//迭代器</span><br><span class="line">	cout&lt;&lt;*ite2&lt;&lt;endl;</span><br><span class="line">	for(int val:lst)&#123;		//增强for循环</span><br><span class="line">		cout&lt;&lt;val&lt;&lt;&quot;   &quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	//-------------------------</span><br><span class="line">	//删除链表中间的结点</span><br><span class="line">	ite = ++lst.begin();</span><br><span class="line">	//删除  迭代器指向结点，该迭代器将失效（可以接返回值）</span><br><span class="line">	list&lt;int &gt;::iterator ite3 = lst.erase(ite);//在迭代器指向的结点之前插入，返回插入的结点的													//迭代器</span><br><span class="line">	cout&lt;&lt;*ite3&lt;&lt;endl;		//返回删除节点的后一个结点的迭代器</span><br><span class="line">	for(int val:lst)&#123;		//增强for循环</span><br><span class="line">		cout&lt;&lt;val&lt;&lt;&quot;   &quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	//------------------------------</span><br><span class="line">	//遍历函数</span><br><span class="line">	::for_each(lst.begin(),lst.end(),&amp;show);</span><br><span class="line">	</span><br><span class="line">	//--------------------------------</span><br><span class="line">	//输出头结点和尾结点</span><br><span class="line">	cout&lt;&lt;*lst.begin()&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	cout&lt;&lt;*(--lst.end())&lt;&lt;endl;//ite.end()指向的是一个无效地址，前一位才是真正的有效的尾结点</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p>map：映射表    key -value键值对</p>
-<p>排序规则:根据键值自动排序，要求键值不能重复</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;map&gt;</span><br><span class="line"></span><br><span class="line">void show(pair&lt;int,string&gt; pr)&#123;</span><br><span class="line">	cout&lt;&lt;pr.first&lt;&lt;&quot;   &quot;&lt;&lt;pr.second&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	//键值，实值</span><br><span class="line">	map&lt;int,string&gt;  mm;</span><br><span class="line">	</span><br><span class="line">	mm[2] = &quot;asd&quot;;</span><br><span class="line">	mm[1] = &quot;lklkskld&quot;;</span><br><span class="line">	mm[3] = &quot;ocwk&quot;;</span><br><span class="line">	</span><br><span class="line">	//插入结点</span><br><span class="line">	pair&lt;int,string&gt; pr(4,&quot;oire&quot;);	//创建键值对</span><br><span class="line">	mm.insert(pr);</span><br><span class="line">	</span><br><span class="line">	//遍历</span><br><span class="line">	map&lt;int,string&gt;::iterator ite = mm.begin();</span><br><span class="line">	while(ite != mm.end())&#123;</span><br><span class="line">		cout&lt;&lt;(*ite).first&lt;&lt;&quot;   &quot;&lt;&lt;ite-&gt;second&lt;&lt;endl;</span><br><span class="line">		ite++;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	//--------------------------</span><br><span class="line">	//删除键值对</span><br><span class="line">	ite = ++mm.begin();</span><br><span class="line">	mm.erase(ite);</span><br><span class="line">	cout&lt;&lt;ite-&gt;first&lt;&lt;&quot;   &quot;&lt;&lt;ite-&gt;second&lt;&lt;endl;</span><br><span class="line">	while(ite != mm.end())&#123;</span><br><span class="line">		cout&lt;&lt;(*ite).first&lt;&lt;&quot;   &quot;&lt;&lt;ite-&gt;second&lt;&lt;endl;</span><br><span class="line">		ite++;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	//---------------------------------</span><br><span class="line">	cout&lt;&lt;mm.size()&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;mm.empty()&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	//------------------------------------</span><br><span class="line">	//遍历1</span><br><span class="line">	for(pair&lt;int,string&gt; prr:mm)&#123;</span><br><span class="line">		cout&lt;&lt;prr.first&lt;&lt;&quot;  &quot;&lt;&lt;prr.second&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;endl;</span><br><span class="line">	//遍历2</span><br><span class="line">	for_each(mm.begin(),mm.end(),&amp;show);cout&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	mm[3] = &quot;safohnev&quot;;//键值已经存在，修改实值</span><br><span class="line">	</span><br><span class="line">	//--------------------------------</span><br><span class="line">	//插入成功返回true,失败返回false</span><br><span class="line">	pair&lt; map&lt;int,string&gt;::iterator , bool&gt; ret =  mm.insert(pair&lt;int,string&gt;(3,&quot;123&quot;));</span><br><span class="line">	if(ret.second)&#123;//判断插入成功还是失败</span><br><span class="line">		cout&lt;&lt;&quot;插入成功&quot;&lt;&lt;endl;</span><br><span class="line">		cout&lt;&lt;ret.first-&gt;first&lt;&lt;&quot;   &quot;&lt;&lt;ret.second-&gt;second&lt;&lt;endl;</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		cout&lt;&lt;&quot;插入失败&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	//---------------------</span><br><span class="line">	//按照key值查找</span><br><span class="line">	ite = mm.find(5);</span><br><span class="line">	if(ite!=mm.end())&#123;</span><br><span class="line">		cout&lt;&lt;ite-&gt;first&lt;&lt;&quot;  &quot;&lt;&lt;ite-&gt;second&lt;&lt;endl;</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		cout&lt;&lt;&quot;没找到&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	cout&lt;&lt;mm.count(7)&lt;&lt;endl;//按照key统计个数（可用于判断键值是否存在）</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="拷贝构造"><a href="#拷贝构造" class="headerlink" title="拷贝构造"></a>拷贝构造</h3><p>空类中编译器会给提供一个默认的拷贝构造函数，参数为当前类对象的引用，函数体代码不为空，参数中对象甲的成员给this甲的成员一一初始化</p>
-<p>一旦我们手动重构拷贝构造函数，编译器就不会提供默认的了</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">class CTest&#123;</span><br><span class="line">public:</span><br><span class="line">	int m_a;</span><br><span class="line">	int *m_p;</span><br><span class="line">public:</span><br><span class="line">	CTest()&#123;</span><br><span class="line">		m_a = 100;</span><br><span class="line">		m_p = new int(20);</span><br><span class="line">	&#125;</span><br><span class="line">	CTest(const CTest &amp; tst)&#123;</span><br><span class="line">		this-&gt;m_a = tst.m_a;</span><br><span class="line">		if(tst.m_p)&#123;//实现深拷贝</span><br><span class="line">			this-&gt;m_p = new int(*tst.m_p);</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			this-&gt;m_p = nullptr;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	~CTest()&#123;</span><br><span class="line">		if(m_p)&#123;</span><br><span class="line">			delete m_p;</span><br><span class="line">			m_p = nullptr;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	CTest tst1;</span><br><span class="line">	CTest tst2(tst1);//调用拷贝构造函数</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="浅拷贝问题"><a href="#浅拷贝问题" class="headerlink" title="浅拷贝问题"></a>浅拷贝问题</h4><p>编译器默认给提供拷贝构造，是一个浅拷贝</p>
-<blockquote>
-<p>1.当类中有指针成员且new了空间，会导致同一块空间被回收多次，程序崩溃</p>
-<p>2.当类中有指针成员且new了空间，当用一个对象修改指针指向空间的值，其他对象使用的是修改之后的值，导致程序逻辑错误</p>
-</blockquote>
-<p>解决浅拷贝问题</p>
-<blockquote>
-<p>1.需要手动重构拷贝构造函数，实现一个深拷贝（为里面的指针成员单独开辟一块空间，并将指针里的值传递过来</p>
-<p>2.避免浅拷贝的发生，函数参数尽量使用引用或指针</p>
-</blockquote>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-平淡的西瓜" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/" class="article-date">
-      <time datetime="2023-01-31T02:47:53.000Z" itemprop="datePublished">2023-01-31</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/">平淡的西瓜</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-数据结构阶段_1" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-数据结构阶段_1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/" class="article-date">
@@ -771,12 +342,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/">数据结构笔记</a>
+    <h1 class="article-title" itemprop="name">
+      数据结构笔记
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -1359,87 +937,91 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2022/09/26/hello-world/" class="article-date">
-      <time datetime="2022-09-26T07:31:36.822Z" itemprop="datePublished">2022-09-26</time>
-</a>
-
-
+    
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/">数据结构笔记</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage"></a></p>
+        <p><span>Created:</span>2022-12-02, 22:33:55</p>
+        <p><span>Updated:</span>2023-02-02, 22:32:49</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/" title="数据结构笔记">http://example.com/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/</a>
+            <span class="copy-path" data-clipboard-text="From http://example.com/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/　　By " title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/09/26/hello-world/">Hello World</a>
-    </h1>
-  
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/">
+                    平淡的西瓜
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2022/09/26/hello-world/">
+                    Hello World
+                </a>
+            </div>
+        
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">1.</span> <span class="toc-text">时间复杂度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%8F%E9%AA%8C%E6%80%A7%E7%BB%93%E8%AE%BA%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">经验性结论：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">3.</span> <span class="toc-text">空间复杂度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">线性结构：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%EF%BC%9A%E7%A9%BA%E9%97%B4%E8%BF%9E%E7%BB%AD%EF%BC%8C%E7%B1%BB%E5%9E%8B%E7%9B%B8%E5%90%8C"><span class="toc-number">4.1.</span> <span class="toc-text">数组：空间连续，类型相同</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">4.2.</span> <span class="toc-text">数组和链表的区别</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8"><span class="toc-number">5.</span> <span class="toc-text">链表</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%95%E9%93%BE%E8%A1%A8%E5%80%92%E7%BD%AE%EF%BC%9A"><span class="toc-number">5.1.</span> <span class="toc-text">单链表倒置：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8%E9%87%8D%E7%BD%AE%EF%BC%9A"><span class="toc-number">5.2.</span> <span class="toc-text">链表重置：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%88%E5%B9%B6%E9%93%BE%E8%A1%A8"><span class="toc-number">5.3.</span> <span class="toc-text">合并链表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%95%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4%E9%97%AE%E9%A2%98"><span class="toc-number">5.4.</span> <span class="toc-text">单链表相交问题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E7%9A%84%E7%89%B9%E6%80%A7"><span class="toc-number">5.5.</span> <span class="toc-text">循环链表的特性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E5%8D%95%E9%93%BE%E8%A1%A8%E6%98%AF%E5%90%A6%E6%9C%89%E7%8E%AF%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%9C%89%E7%8E%AF%E7%9A%84%E8%AF%9D%EF%BC%8C%E6%89%BE%E5%88%B0%E7%8E%AF%E7%9A%84%E5%85%A5%E5%8F%A3%E8%8A%82%E7%82%B9"><span class="toc-number">5.6.</span> <span class="toc-text">判断单链表是否有环，如果有环的话，找到环的入口节点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E9%93%BE%E8%A1%A8%E7%9A%84%E5%A4%8D%E5%88%B6"><span class="toc-number">5.7.</span> <span class="toc-text">复杂链表的复制</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E8%A1%A8HashTable"><span class="toc-number">6.</span> <span class="toc-text">哈希表HashTable</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9E%E6%BA%AF%E6%B3%95%EF%BC%88BackTracking%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">回溯法（BackTracking）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%9E%E6%BA%AF%E6%B3%95%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">7.1.</span> <span class="toc-text">回溯法解决的问题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF"><span class="toc-number">7.2.</span> <span class="toc-text">回溯算法模板</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%A8%E6%8E%92%E5%88%97"><span class="toc-number">7.3.</span> <span class="toc-text">全排列</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%A8%E6%8E%92%E5%88%97%E4%BB%A3%E7%A0%81"><span class="toc-number">7.4.</span> <span class="toc-text">全排列代码</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D"><span class="toc-number">8.</span> <span class="toc-text">正则表达式匹配</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%B3%E8%B7%83%E5%88%97%E8%A1%A8%EF%BC%9ASkipList"><span class="toc-number">9.</span> <span class="toc-text">跳跃列表：SkipList</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%92%E5%BD%92%EF%BC%9A"><span class="toc-number">10.</span> <span class="toc-text">递归：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%9D%92%E8%9B%99%E8%B7%B3%E5%8F%B0%E9%98%B6"><span class="toc-number">10.1.</span> <span class="toc-text">青蛙跳台阶</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E9%80%92%E5%BD%92%E5%86%99%E6%B3%95%EF%BC%9A"><span class="toc-number">10.2.</span> <span class="toc-text">斐波那契递归写法：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E6%B3%95"><span class="toc-number">11.</span> <span class="toc-text">分治法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%EF%BC%88%E6%8A%98%E5%8D%8A%E6%9F%A5%E6%89%BE%EF%BC%89Binary-Chop%EF%BC%9A%E5%89%8D%E6%8F%90%EF%BC%9A%E5%AF%B9%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BF%9B%E8%A1%8C%E6%9F%A5%E6%89%BE"><span class="toc-number">11.1.</span> <span class="toc-text">二分查找（折半查找）Binary Chop：前提：对有序数组进行查找</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%88%EF%BC%88stack%EF%BC%89%EF%BC%9A%EF%BC%88%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A0%88%EF%BC%89FIFO"><span class="toc-number">12.</span> <span class="toc-text">栈（stack）：（数据结构栈）FIFO</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%9F%E5%88%97%EF%BC%88FIFO%EF%BC%89"><span class="toc-number">13.</span> <span class="toc-text">队列（FIFO）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97"><span class="toc-number">14.</span> <span class="toc-text">栈和队列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">15.</span> <span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%A9%BA%E6%A0%BC%E6%9B%BF%E6%8D%A2"><span class="toc-number">15.1.</span> <span class="toc-text">字符串空格替换</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%80%92%E7%BD%AE"><span class="toc-number">15.2.</span> <span class="toc-text">字符串倒置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%BB%E6%89%BE%E5%AD%97%E7%AC%A6"><span class="toc-number">15.3.</span> <span class="toc-text">寻找字符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#kmp"><span class="toc-number">15.4.</span> <span class="toc-text">kmp</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Sunday"><span class="toc-number">15.5.</span> <span class="toc-text">Sunday</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84"><span class="toc-number"></span> <span class="toc-text">树形结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-number">1.</span> <span class="toc-text">二叉树</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.1.</span> <span class="toc-text">二叉树的性质</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">满二叉树：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">完全二叉树：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.4.</span> <span class="toc-text">二叉树的创建</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86"><span class="toc-number">1.5.</span> <span class="toc-text">二叉树的遍历</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%EF%BC%9A"><span class="toc-number">1.5.1.</span> <span class="toc-text">递归遍历：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86"><span class="toc-number">1.5.2.</span> <span class="toc-text">非递归遍历</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B9%BF%E5%BA%A6%E9%81%8D%E5%8E%86"><span class="toc-number">1.5.3.</span> <span class="toc-text">广度遍历</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">2.</span> <span class="toc-text">完全二叉树的创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-x2F-%E6%8E%92%E5%BA%8F%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88BST%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">二叉搜索树&#x2F;排序二叉树（BST）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E6%8E%92%E5%BA%8F%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-number">3.1.</span> <span class="toc-text">构建排序二叉树</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%88%A0%E9%99%A4"><span class="toc-number">3.2.</span> <span class="toc-text">排序二叉树的删除</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%A7%8D%E6%83%85%E5%86%B5%EF%BC%9A%E5%88%A0%E9%99%A4%E5%8F%B6%E5%AD%90%E7%BB%93%E7%82%B9%E3%80%82%E6%AF%94%E5%A6%82%EF%BC%9A2-5-9-12"><span class="toc-number">3.2.1.</span> <span class="toc-text">第一种情况：删除叶子结点。比如：2,5,9,12.</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%83%85%E5%86%B5%EF%BC%9A%E5%88%A0%E9%99%A4%E5%8F%AA%E6%9C%89%E4%B8%80%E6%A3%B5%E5%AD%90%E6%A0%91%E7%9A%84%E7%BB%93%E7%82%B9%E3%80%82%E6%AF%94%E5%A6%82%EF%BC%9A1"><span class="toc-number">3.2.2.</span> <span class="toc-text">第二种情况：删除只有一棵子树的结点。比如：1</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%A7%8D%E6%83%85%E5%86%B5%EF%BC%9A%E5%88%A0%E9%99%A4%E6%9C%89%E4%B8%A4%E6%A3%B5%E5%AD%90%E6%A0%91%E7%9A%84%E7%BB%93%E7%82%B9%E3%80%82%E6%AF%94%E5%A6%82%EF%BC%9A7-3-10%E3%80%82"><span class="toc-number">3.2.3.</span> <span class="toc-text">第三种情况：删除有两棵子树的结点。比如：7,3,10。</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%B0%86%E4%B8%80%E6%A3%B5%E6%8E%92%E5%BA%8F%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BD%AC%E5%8F%98%E4%B8%BA%E6%9C%89%E5%BA%8F%E7%9A%84%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8"><span class="toc-number">3.3.</span> <span class="toc-text">如何将一棵排序二叉树转变为有序的双向链表</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91-x2F-%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%88AVL%E6%A0%91%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">平衡二叉树&#x2F;平衡二叉搜索树（AVL树）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%B3%E6%97%8B"><span class="toc-number">4.1.</span> <span class="toc-text">右旋</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%97%8B%E8%BD%AC%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">4.2.</span> <span class="toc-text">旋转的情况</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B7%A6%E6%97%8B"><span class="toc-number">4.3.</span> <span class="toc-text">左旋</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%A2%E9%BB%91%E6%A0%91"><span class="toc-number">5.</span> <span class="toc-text">红黑树</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BA%A2%E9%BB%91%E6%A0%91%E7%9A%84%E6%8F%92%E5%85%A5"><span class="toc-number">5.1.</span> <span class="toc-text">红黑树的插入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BA%A2%E9%BB%91%E6%A0%91%E7%9A%84%E5%88%A0%E9%99%A4"><span class="toc-number">5.2.</span> <span class="toc-text">红黑树的删除</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">5.3.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95"><span class="toc-number">6.</span> <span class="toc-text">索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#B-Tree"><span class="toc-number">7.</span> <span class="toc-text">B-Tree</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%99%90%E5%88%B6"><span class="toc-number">7.1.</span> <span class="toc-text">限制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#B-Tree%E6%8F%92%E5%85%A5"><span class="toc-number">7.2.</span> <span class="toc-text">B-Tree插入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#B-Tree%E5%88%A0%E9%99%A4"><span class="toc-number">7.3.</span> <span class="toc-text">B-Tree删除</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#B-Tree-1"><span class="toc-number">8.</span> <span class="toc-text">B+Tree</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#B-%E6%A0%91%E6%8F%92%E5%85%A5"><span class="toc-number">8.1.</span> <span class="toc-text">B+树插入</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%9ABubbleSort"><span class="toc-number"></span> <span class="toc-text">冒泡排序：BubbleSort</span></a>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+
+    <script>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"数据结构笔记　| 蔡胖子　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -1447,9 +1029,35 @@
 
 
 
+    
 
-  
-  
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/" title="Pre: 平淡的西瓜">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2022/09/26/hello-world/" title="Next: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2023/01/31/hexo%E4%BD%BF%E7%94%A8/">hexo使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/01/31/C++%E7%AC%94%E8%AE%B0/">C++笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/01/31/%E5%B9%B3%E6%B7%A1%E7%9A%84%E8%A5%BF%E7%93%9C/">平淡的西瓜</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/12/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5_1/">数据结构笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/09/26/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
